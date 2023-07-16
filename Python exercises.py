@@ -1,3 +1,4 @@
+#Đếm số chẵn trong dãy số nhập vào mà ko dùng if-else
 '''
 numbers_list = input('Enter numbers: ').split()
 odd_numbers = 0
@@ -9,6 +10,7 @@ even_numbers = len(numbers_list) - odd_numbers
 print(f'The number of even numbers is {even_numbers}')
 '''
 
+#Kiểm tra một ký tự có phải chữ số thập phân
 '''
 Digit  = input('Enter a number: ')
 print(Digit.isdigit())
