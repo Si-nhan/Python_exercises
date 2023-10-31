@@ -2,7 +2,7 @@ import ffmpeg
 import numpy as np
 import cv2
 
-source = "rtsp://admin:sinhan123@192.168.1.36:554/onvif1"
+source = "rtsp://admin:sinhan123@192.168.1.47:554/onvif1"
 size: int = 720*1280*3 # Kích thước frame của stream
 
 capture = (

@@ -1,15 +1,9 @@
 import cv2
-# import os
 
-# os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = "rtsp_transport; udp"
-
-rtsp = 'rtsp://admin:sinhan123@192.168.1.41:554/onvif1'
-rtsp += '/;rtsp_transport=udp'
-video_codec = 'h264'
+rtsp = 'rtsp://admin:sinhan123@192.168.1.47:554/onvif1'
 
 # Khởi tạo đối tượng VideoCapture để đọc video stream từ camera
 cap = cv2.VideoCapture(0)
-cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*video_codec))
 
 # Kiểm tra xem camera có sẵn sàng để đọc hay không
 if not cap.isOpened():
