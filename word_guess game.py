@@ -1,7 +1,7 @@
 print("Start the game...")
-word = "umbrella"
+word = "independence"
 guesses = ''
-turns = 10
+turns = 5
 while turns > 0: 
     failed = 0 
     for char in word: 
@@ -18,6 +18,6 @@ while turns > 0:
     if guess not in word:
         turns -= 1
         print("Wrong guess!")
-        print("You have", + turns, "more guesses")
+        print("You have", turns, "more guesses")
         if turns == 0: 
             print("You Lose")

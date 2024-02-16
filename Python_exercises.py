@@ -17,12 +17,12 @@ print(Digit.isdigit())
 '''
 
 #Đảo ngược câu trong đoạn văn bản
-'''
+
 string = input()
 list = string.split()
 new_list = list[::-1]
 print(' '.join(new_list))
-'''
+
 
 #In ra "Learn_Python_is_Easy"
 ''''
