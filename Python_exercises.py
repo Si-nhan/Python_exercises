@@ -17,12 +17,12 @@ print(Digit.isdigit())
 '''
 
 #Đảo ngược câu trong đoạn văn bản
-
+'''
 string = input()
 list = string.split()
 new_list = list[::-1]
 print(' '.join(new_list))
-
+'''
 
 #In ra "Learn_Python_is_Easy"
 ''''
@@ -112,7 +112,7 @@ for i in range(1, n+1):
     count += 1
     list.append(str(i))
 list.append('!')
-print(n, "have", count, "divisors")
+print(n, "has", count, "divisors")
 print("They are", ' '.join(list))
 '''
 
@@ -207,17 +207,15 @@ print(manhattan(x, y))
 sample_list = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", 'chín']
 made_list = []
 
-def docso(num):
-    while num/10 > 0:
-        made_list.append(sample_list[num % 10])
-        num = int(num/10)
-    number_is_read = ' '.join(made_list[::-1])
+def docso(num_string):
+    for c in num_string:
+        made_list.append(sample_list[int(c)])
+    number_is_read = ' '.join(made_list[:])
     print(number_is_read)
-
-num = int(input("Nhập số cần đọc: "))
-docso(num)
+    
+num_string = input("Nhập số cần đọc: ")
+docso(num_string)
 '''
-
 
 #Kiểm tra email hợp lệ
 '''
